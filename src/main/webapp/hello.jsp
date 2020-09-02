@@ -10,5 +10,11 @@
   <body>
     <h1>Hello</h1>
     <p><%= hello %></p>
+    <form action="upload" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="action_name" value="upload" />
+      <input type="text"" name="name" />
+      <input type="file" name="file" />
+      <button>Upload</button>
+    </form>
   </body>
 </html>

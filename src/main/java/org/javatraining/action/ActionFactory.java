@@ -10,6 +10,8 @@ public class ActionFactory {
     switch (actionName) {
       case "hello":
         return new HelloAction();
+      case "upload":
+        return new UploadAction();
       default:
         return null;
     }
